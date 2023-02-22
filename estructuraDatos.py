@@ -12,7 +12,7 @@ def es_numero_primo(numero):
     return True
 
 
-numero=input("ingrese un numero para ver si es primo")
+numero=input("ingrese un numero para ver si es primo: ")
 
 print(es_numero_primo(12)) # False
 print(es_numero_primo(43)) # True
@@ -28,7 +28,7 @@ def calcular_factorial(numero):
 
     return factorial
 
-numero=input("ingrese un numero para calcular factorial")
+numero=input("ingrese un numero para calcular factorial ")
 print(calcular_factorial(int(numero)))
 print(calcular_factorial(0)) # 1
 print(calcular_factorial(3)) # 6
@@ -48,3 +48,20 @@ print(calcular_factorial_recursivo(0)) # 1
 print(calcular_factorial_recursivo(3)) # 6
 print(calcular_factorial_recursivo(4)) # 24
 print(calcular_factorial_recursivo(5)) # 120
+
+
+def numero_triangular(row):
+
+    triangular = 0
+    for i in range(1, row + 1):
+        triangular += i
+
+    return triangular
+
+row= int(input("Ingrese cuantas columnas deseas imprimir"))
+print(numero_triangular(row))
+#print(numero_triangular(2)) # 3
+#print(numero_triangular(4)) # 10
+#print(numero_triangular(6)) # 21
+
+
